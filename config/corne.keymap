@@ -37,6 +37,14 @@
                         bindings = <&kp>, <&kp>;
                 };
         };
+        combos {
+        compatible = "zmk,combos";
+        combo_sz {
+            timeout-ms = <50>;
+            key-positions = <LM3 RT0>;
+            bindings = <DE_SZ>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
