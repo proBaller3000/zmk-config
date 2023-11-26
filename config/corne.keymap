@@ -45,6 +45,11 @@
             key-positions = <LM3 RT0>;
             bindings = <DE_SZ>;
         };
+        combo_ue {
+            timeout-ms = <50>;
+            key-positions = <RT1 LT2>;
+            bindings = <DE_UE>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
