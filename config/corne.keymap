@@ -17,8 +17,6 @@
 #include "symbols.h"
 #include "keypos_42keys.h"
 
-#include "nice_nano_v2.overlay"
-
 &led_strip {
     chain-length = <27>;
 };
