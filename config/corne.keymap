@@ -39,19 +39,13 @@
                         bindings = <&kp>, <&kp>;
                 };
         };
-        combos {
-        compatible = "zmk,combos";
-        combo_sz {
-            timeout-ms = <50>;
-            key-positions = <LM3 RT0>;
-            bindings = <DE_SZ>;
-        };
-        combo_ue {
-            timeout-ms = <50>;
-            key-positions = <RT1 LT2>;
-            bindings = <DE_UE>;
-        };
-    };
+
+// Custom Combos
+#undef COMBO_TERM
+#define COMBO_TERM 50
+ZMK_COMBO(sz,  DE_SZ, LM3 RT0, ALL)
+ZMK_COMBO(ue, DE_UE, RT1 LT2, ALL)
+
         keymap {
                 compatible = "zmk,keymap";
 
