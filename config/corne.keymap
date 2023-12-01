@@ -22,8 +22,12 @@
     chain-length = <27>;
 };
 
-#define HRML(k1,k2,k3,k4) &ht LSHIFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHIFT k4
+ZMK_BEHAVIOR(hrm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
 
 // Custom Combos
 #undef COMBO_TERM
@@ -32,27 +36,13 @@ ZMK_COMBO(sz,  DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, DE_UE, RT1 LT2, ALL)
 
 / {
-        behaviors {
-                ht: hold_tap {
-                        label = "hold_tap";
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "tap-preferred";
-                        tapping-term-ms = <220>;
-                        quick-tap-ms = <150>;
-                        global-quick-tap;
-                        bindings = <&kp>, <&kp>;
-                };
-        };
-
-
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   DE_Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB HRML(A,   S,    D,   F) &kp G     &kp H HRMR(J,    K,    L,   SEMICOLON)  DE_AE
+   &kp TAB &hrm LSHIFT A &hrm LCTRL S &hrm LALT D &hrm LGUI F &kp G   &kp H &hrm RGUI J &hmr RALT K &hmr RCTRL L &hmr RSHIFT SEMICOLON  DE_AE
    &kp LSHFT DE_Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &mo 3 &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
