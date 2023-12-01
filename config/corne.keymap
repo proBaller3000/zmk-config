@@ -25,6 +25,11 @@
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHIFT k4
 
+// Custom Combos
+#undef COMBO_TERM
+#define COMBO_TERM 50
+ZMK_COMBO(sz,  DE_SZ, LM3 RT0, ALL)
+ZMK_COMBO(ue, DE_UE, RT1 LT2, ALL)
 
 / {
         behaviors {
@@ -40,11 +45,6 @@
                 };
         };
 
-// Custom Combos
-#undef COMBO_TERM
-#define COMBO_TERM 50
-ZMK_COMBO(sz,  DE_SZ, LM3 RT0, ALL)
-ZMK_COMBO(ue, DE_UE, RT1 LT2, ALL)
 
         keymap {
                 compatible = "zmk,keymap";
