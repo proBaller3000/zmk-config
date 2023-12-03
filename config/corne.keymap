@@ -73,7 +73,7 @@ ZMK_LAYER(symbols_layer,
 
 ZMK_LAYER(system_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       &bootloader  &trans        &trans        &trans        &trans        &trans                                        &trans        &trans        &trans        &trans        &trans        &bootloader
+       &bootloader   &bt BT_CLR    &bt BT_NXT        &trans        &trans        &trans                                        &trans        &trans        &trans        &trans        &trans        &bootloader
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_COLOR_HSB(128,100,100)    &trans        &trans        &trans        &trans        &trans        &trans
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
