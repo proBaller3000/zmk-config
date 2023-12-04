@@ -25,7 +25,7 @@
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
+    quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
 )
 
