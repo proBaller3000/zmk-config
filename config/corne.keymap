@@ -29,13 +29,6 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-ZMK_BEHAVIOR(tkm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    bindings = <&mo>, <&kp>;
-)
-
 // Custom Combos
 #undef COMBO_TERM
 #define COMBO_TERM 50
@@ -46,19 +39,19 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &kp ESC       &kp Q         &kp W         &kp E         &kp R         &kp T             DE_Z          &kp U         &kp I         &kp O         &kp P         &kp BSPC
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp TAB      &hrm LSHIFT A  &hrm LCTRL S  &hrm LGUI D   &hrm LALT F   &kp G             &kp H        &hrm LALT J    &hrm LGUI K  &hrm LCTRL L &hrm LSHIFT SEMICOLON  DE_AE
+       &kp TAB      &hrm LSHIFT A  &hrm LCTRL S  &hrm LALT D   &hrm LGUI F   &kp G             &kp H        &hrm LGUI J    &hrm LALT K  &hrm LCTRL L &hrm LSHIFT SEMICOLON  DE_AE
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LSHFT     DE_Y          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &trans         &mo 3        &tkm 1 SPACE      &tkm 2 RET    &trans         &mo 4
+                                                 &mo 3         &mo 1         &kp SPACE         &kp RET       &mo 2         &mo 4
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
 ZMK_LAYER(nav_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &hrm PG_UP UP &trans        &trans        &kp DEL
+       &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp UP        &trans        &trans        &trans
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &trans      &hrm LSHIFT A  &hrm LCTRL S  &hrm LGUI D   &hrm LALT F    &trans            &trans     &hrm HOME LEFT &hrm PG_DN DOWN &hrm END RIGHT &hrm LSHIFT SEMICOLON DE_AE
+       &trans      &hrm LSHIFT A  &hrm LCTRL S  &hrm LALT D   &hrm LGUI F    &trans          &trans      &hrm LGUI LEFT &hrm LALT DOWN &hrm LCTRL RIGHT &hrm LSHIFT SEMICOLON DE_AE
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -70,7 +63,7 @@ ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        DE_DEG        DE_EXCL       DE_DQUO       DE_DLR        DE_PERC        &trans            DE_AMPR       DE_SLSH        &trans       DE_EQL        DE_QUES       DE_ASTR
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       DE_CARET      DE_LN_LABK &hrm LCTRL DE_LBKT   DE_LBRC   DE_LPRN       DE_Y              &kp MINUS     DE_RPRN       DE_RBRC    &hrm LCTRL DE_LBKT  DE_LN_RABK   DE_HASH
+       DE_CARET      DE_LN_LABK    DE_LBKT       DE_LBRC       DE_LPRN       DE_Y              &kp MINUS     DE_RPRN       DE_RBRC       DE_LBKT       DE_LN_RABK    DE_HASH
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        DE_PIPE        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        DE_PLUS
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -84,9 +77,9 @@ ZMK_LAYER(numbers_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &trans      &hrm LSHIFT A  &hrm LCTRL S  &hrm LALT D   &hrm LGUI F    &trans            &trans        &kp N4        &kp N5        &kp N6        &trans        &trans
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &trans        &trans        &trans        &trans        &trans        &trans            &trans        &kp N1        &kp N2        &kp N3        &trans        &trans
+       &trans        &trans        &trans        &trans        &trans        &trans            &trans        &kp N1        &kp N2        &kp NUMBER_3  &trans        &trans
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &trans        &trans        &trans            &kp N0        &trans        &trans
+                                                 &trans        &trans        &trans            &trans        &trans        &trans
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
