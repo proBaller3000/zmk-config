@@ -70,7 +70,7 @@ ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        DE_DEG        DE_EXCL       DE_DQUO       DE_DLR        DE_PERC        &trans            DE_AMPR       DE_SLSH        &trans       DE_EQL        DE_QUES       DE_ASTR
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       DE_CARET      DE_LN_LABK &hrm LCTRL DE_LBKT   DE_LBRC   DE_LPRN       DE_Y              &kp MINUS     DE_RPRN       DE_RBRC    &hrm LCTRL DE_LBKT  DE_LN_RABK   DE_HASH
+       DE_CARET      DE_LN_LABK &hrm LCTRL LBRACE DE_LN_LBRC  DE_LN_LPRN     DE_Y              &kp MINUS     DE_LN_RPRN    DE_LN_RBRC  &hrm LCTRL RBRACE  DE_LN_RABK   DE_HASH
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        DE_PIPE        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        DE_PLUS
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
