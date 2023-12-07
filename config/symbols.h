@@ -381,10 +381,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_AT &kp RA(Q)           // "@"
 // #define DE_LPAR &kp LS(N8)        // ( DE_LPRN
 // #define DE_RPAR &kp LS(N9)        // ) DE_RPRN
-#define DE_LBKT &kp RA(N8)        // [ DE_LBRC
-#define DE_RBKT &kp RA(N9)        // ] DE_RBRC
-#define DE_LBRC &kp RA(N7)        // { DE_LCBR
-#define DE_RBRC &kp RA(N0)        // } DE_RCBR
+// #define DE_LBKT &kp RA(N8)        // [ DE_LBRC
+// #define DE_RBKT &kp RA(N9)        // ] DE_RBRC
+// #define DE_LBRC &kp RA(N7)        // { DE_LCBR
+// #define DE_RBRC &kp RA(N0)        // } DE_RCBR
 // #define DE_APOS &kp PIPE      // ' DE_QUOT
 
 // vim: fdm=marker:
