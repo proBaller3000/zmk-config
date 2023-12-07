@@ -370,6 +370,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //custom flo
 #define LBRACE RA(N8) // {
 #define RBRACE RA(N9) // }
+#define LBRACKET &kp RA(N7)        // { DE_LCBR
+#define RBRACKET &kp RA(N0)        // } DE_RCBR
 
 // ###############
 // #define DE_FSLH &kp AMPS  // "/" DE_SLSH
