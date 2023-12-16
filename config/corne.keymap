@@ -71,9 +71,9 @@ ZMK_LAYER(nav_layer,
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       DE_DEG        DE_EXCL       DE_DQUO       DE_DLR        DE_PERC       &kp RA(Q)             DE_AMPR       DE_SLSH      DE_QUOT       DE_EQL        DE_QUES       DE_ASTR
+       &kp RA(Q)     DE_EXCL       DE_DQUO       DE_DLR        DE_PERC       DE_DEG             DE_AMPR       DE_SLSH      DE_QUOT       DE_EQL        DE_QUES       DE_ASTR
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       DE_CARET     DE_LN_LABK &hrm LCTRL LBRACE LBRACKET     DE_LN_LPRN    DE_Y              &kp MINUS     DE_LN_RPRN    RBRACKET  &hrm LCTRL RBRACE  DE_LN_RABK    DE_HASH
+       DE_CARET     DE_LN_LABK &hrm LCTRL LBRACE LBRACKET     DE_LN_LPRN     DE_Y              &kp MINUS     DE_LN_RPRN    RBRACKET  &hrm LCTRL RBRACE  DE_LN_RABK    DE_HASH
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        DE_PIPE       ______        ______        ______        ______        ______            ______        ______        ______        ______        ______        DE_PLUS
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
