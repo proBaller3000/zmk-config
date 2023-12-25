@@ -49,13 +49,13 @@ ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &hrm LA(F4) ESC  HT(Q)        HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
+      &hrm LA(F4) ESC  HT(Q)        HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp TAB      &hrm LSHIFT A  &hrm LCTRL S  &hrm LGUI D   &hrm LALT F   &kp G             &kp H        &hrm LALT J    &hrm LGUI K  &hrm LCTRL L &hrm LSHIFT SEMICOLON  &kp DE_AE
+      &kp LSHFT &hrm LSHIFT A  &hrm LCTRL S  &hrm LGUI D   &hrm LALT F   &kp G             &kp H        &hrm LALT J    &hrm LGUI K  &hrm LCTRL L &hrm LSHIFT SEMICOLON  &kp DE_AE
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LSHFT     &kp DE_Y          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp LCTRL
+       &kp LCTRL     &kp DE_Y          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp LCTRL
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 ______         &mo 3        &tkm 1 SPACE      &tkm 2 RET    ______        ______
+                                                 &kp LCTRL     &tkm 3 TAB    &tkm 1 SPACE      &tkm 2 RET    &kp LALT      &kp LGUI
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
