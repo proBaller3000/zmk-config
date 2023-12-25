@@ -49,9 +49,9 @@ ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &hrm LA(F4) ESC  HT(Q)        HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
+      &hrm LA(F4) ESC  HT(Q)       HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp LSHFT &hrm LSHIFT A  &hrm LCTRL S  &hrm LGUI D   &hrm LALT F   &kp G             &kp H        &hrm LALT J    &hrm LGUI K  &hrm LCTRL L &hrm LSHIFT SEMICOLON  &kp DE_AE
+      &kp LSHFT     &hrm LSHIFT A  HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)      &hrm LSHIFT DE_OE  HT(DE_AE)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     &kp DE_Y          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp LCTRL
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
